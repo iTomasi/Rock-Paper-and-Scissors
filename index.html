@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock - Paper - Scissors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="notification">
+        <p id="notification__error" class="notification__property notification__error">Please select a option</p>
+        <p id="notification__won" class="notification__property notification__won">You won this round</p>
+        <p id="notification__lost" class="notification__property notification__lost">You lost this round</p>
+        <p id="notification__draw" class="notification__property notification__draw">Draw this round</p>
+        <p id="notification__reset" class="notification__property notification__reset">Your game is reseted</p>
+    </div>
+
+    <div class="info">
+        <h1>Rock, Paper & Scissors</h1>
+
+        <h2>Wins the best first that <b>reaches 5</b></h2>
+    </div>
+
+    <div class="resetGame">
+        <button id="reset__btn" type="button">Reset Game</button>
+    </div>
+    
+
+    <div class="game">
+        <div class="game__btns">
+            <button id="rock__btn" type="button">Rock</button>
+            <button id="paper__btn"type="button">Paper</button>
+            <button id="scissors__btn" type="button">Scissors</button>
+        </div>
+
+        <div class="game__btns-play">
+            <button id="play__btn" type="button">PLAY!</button>
+        </div>
+
+        <div class="game__table">
+            <div class="game__table-player">
+                <img id="player-img" src="img/user.png" alt="player">
+                <h4 id="player-score">0</h4>
+            </div>
+
+            <div class="game__table-vs">
+                <span>V/S</span>
+            </div>
+
+            <div class="game__table-bot">
+                <img id="bot-img" src="img/user.png" alt="bot">
+                <h4 id="bot-score">0</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

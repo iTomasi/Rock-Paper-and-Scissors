@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #2f3640;
+}
+
+.notification {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification__property {
+    padding: 5px 20px;
+    font-size: 22.5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.notification__won {
+    background: #4cd137;
+    display: none;
+}
+
+.notification__lost {
+    background: #e84118;
+    display: none;
+}
+
+.notification__draw {
+    background: #fbc531;
+    display: none;
+}
+
+.notification__error {
+    background: #e84118;
+    display: none;
+}
+
+.notification__reset {
+    background: #00a8ff;
+    display: none;
+}
+
+.info {
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    max-width: 450px;
+    border-radius: 8px;
+    padding: 5px;
+    color: #f9f9f9;
+}
+
+.info h1 {
+    margin-bottom: 10px;
+}
+
+.info b {
+    color: #fbc531;
+}
+
+.resetGame {
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.resetGame button {
+    background: #9c88ff;
+    border: none;
+    outline: none;
+    width: 40%;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 0.3s;
+    font-weight: 800;
+}
+
+.resetGame button:hover {
+    background: #8c7ae6;
+    transition-property: background;
+    transition-duration: 0.3s
+}
+
+.game {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+}
+
+.game__btns,
+.game__btns-play {
+    text-align: center;
+}
+
+.game button {
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin: 0 10px;
+    width: 20%;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 0.5s;
+    font-weight: 800;
+}
+
+.game button:hover {
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+
+.game__btns button {
+    background: #00a8ff
+}
+
+.game__btns button:hover {
+    background: #0097e6
+}
+
+.game__btns-play {
+    margin-top: 20px;
+}
+
+.game__btns-play button {
+    background: #4cd137;
+    width: 40%;
+    height: 40px;
+}
+
+.game__btns-play button:hover {
+    background: #44bd32
+}
+
+.game__table {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.game__table h4 {
+    color: #fbc531;
+    font-size: 30px;
+}
+
+.game__table-player,
+.game__table-bot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game__table-player {
+    margin-right: 10px;
+}
+
+.game__table-bot {
+    margin-left: 10px;
+}
+
+.game__table-player img,
+.game__table-bot img {
+    width: 160px;
+    height: 160px;
+    object-position: center;
+}
+
+.game__table-bot img {
+    transform: scaleX(-1)
+}
+
+.game__table-vs {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 570px) {
+    .info,
+    .resetGame,
+    .game {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .game__table img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .game button {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .game__btns-play button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .info h1 {
+        font-size: 25px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .game__table img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .game__table-vs {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .game button {
+        width: 24%;
+    }
+
+    .game__btns-play button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 349px) {
+
+    .resetGame button {
+        width: 50%;
+    }
+    .game button {
+        font-size: 14px;
+        width: 22%;
+    }
+
+    .game__btns-play button {
+        width: 50%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 317px) {
+    .game__table img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .game__table-vs {
+        font-size: 20px;
+    }
+
+    .game button {
+        font-size: 12px;
+        width: 22%;
+    }
+
+    .game__btns-play button {
+        width: 50%;
+        font-size: 18px;
+    }
+}
+
